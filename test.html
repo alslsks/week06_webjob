@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>学生成绩计算</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 20px;  
+        }  
+        h1 {  
+            color: #333;  
+        }  
+        .output {  
+            margin-top: 20px;  
+            white-space: pre-line;  
+        }  
+        button {  
+            margin-top: 20px;  
+            padding: 10px 20px;  
+            font-size: 16px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>学生成绩计算</h1>  
+    <button onclick="calculateTotalScores()">计算总分并按总分排序</button>  
+    <button onclick="calculateTopThree('chinese')">计算语文前三名</button>  
+    <button onclick="calculateTopThree('math')">计算数学前三名</button>  
+    <button onclick="calculateTopThree('english')">计算英语前三名</button>  
+      
+    <div class="output" id="output"></div>  
+  
+    <script src="test.js"></script>  
+</body>  
+</html>
